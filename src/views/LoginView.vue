@@ -1,6 +1,10 @@
 <script setup lang="ts">
-function click() {
-  alert('Hello')
+import { UserService } from '@/services/user.service.ts'
+
+async function click() {
+  const userService = new UserService()
+  const response = await userService.login('benjamin.bulis@outlook.at', 'Test12345!')
+  console.log(response)
 }
 </script>
 
