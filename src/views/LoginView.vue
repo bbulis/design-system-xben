@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import { UserService } from '@/services/user.service.ts'
+import { ref } from 'vue'
+import { useAppStore } from '@/stores/app.store.ts'
 
-async function click() {
-  const userService = new UserService()
-  const response = await userService.login('benjamin.bulis@outlook.at', 'Test12345!')
-  console.log(response)
+const store = useAppStore()
+const email = ref()
+const password = ref()
+
+function click() {
+  store.login(email.value, password.value)
 }
 </script>
 
@@ -13,11 +16,11 @@ async function click() {
     <h1>User Verwaltung xben.org</h1>
     <div class="login-box-section">
       <p>E-Mail</p>
-      <input type="email" class="input" />
+      <input type="email" class="input" v-model="email" />
     </div>
     <div class="login-box-section">
       <p>Passwort</p>
-      <input type="password" class="input" />
+      <input type="password" class="input" v-model="password" />
     </div>
     <div class="login-box-section login-box-button">
       <button @click="click" class="button button-primary">Anmelden</button>
@@ -28,10 +31,10 @@ async function click() {
 <style scoped>
 .login-box {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 3rem;
+  width: 100%;
 }
 
 .login-box-section {
@@ -43,6 +46,6 @@ button {
 }
 
 input {
-  width: 100%;
+  width: 30rem;
 }
 </style>

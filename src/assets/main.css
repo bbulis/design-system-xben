@@ -1,6 +1,9 @@
 @import url("input.css");
 @import url("button.css");
 @import url("color.css");
+@import url("header.css");
+@import url("text.css");
+@import url("box.css");
 
 * {
     font-family: "Open Sans", serif;;
