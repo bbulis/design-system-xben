@@ -1,23 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LoginView from '@/views/LoginView.vue'
-import DashboardView from '@/views/DashboardView.vue'
+import InputView from '@/views/InputView.vue'
+import MainView from '@/views/MainView.vue'
+import ButtonView from '@/views/ButtonView.vue'
+import TextView from '@/views/TextView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      redirect: '/login',
+      redirect: '/main',
     },
     {
-      path: '/login',
-      name: 'login',
-      component: LoginView,
+      path: '/main',
+      name: 'main',
+      component: MainView,
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: DashboardView,
+      path: '/input',
+      name: 'input',
+      component: InputView,
+    },
+    {
+      path: '/button',
+      name: 'button',
+      component: ButtonView,
+    },
+    {
+      path: '/text',
+      name: 'text',
+      component: TextView,
     },
   ],
 })

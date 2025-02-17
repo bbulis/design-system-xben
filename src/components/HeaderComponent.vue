@@ -2,9 +2,13 @@
 
 <template>
   <div class="header">
-    <div class="header-items">
-      <h1 class="header-item">Dashboard</h1>
-      <button class="button button-secondary header-item">Abmelden</button>
+    <div class="header-content">
+      <p class="header-title">XBEN Design System</p>
+      <div class="header-links">
+        <RouterLink to="/button">Buttons</RouterLink>
+        <RouterLink to="/input">Input</RouterLink>
+        <RouterLink to="/text">Text</RouterLink>
+      </div>
     </div>
   </div>
 </template>

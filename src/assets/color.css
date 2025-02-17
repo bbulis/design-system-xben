@@ -1,3 +1,7 @@
 :root {
-    --color-primary: #83b1d4
+    --color-primary: #83b1d4;
+    --failure-primary: #f46666;
+    --header-backgroud-color: #e0e0e0;
+    --backgroud-color: #fafafa;
+    --text-color-primary: #5b5b5b;
 }
