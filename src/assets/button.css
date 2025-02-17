@@ -3,6 +3,7 @@
     font-size: 1rem;
     border-radius: 0.3rem;
     border: none;
+    transition: 0.3s;
 }
 
 .button-primary {
@@ -13,7 +14,7 @@
     color: white;
 }
 
-.button-secondary {
+.button-primary-outline {
     background-color: white;
     border-style: solid;
     border-color: var(--color-primary);
@@ -21,6 +22,23 @@
     color: var(--color-primary);
 }
 
+.button-danger {
+    background-color: var(--danger);
+    border-style: solid;
+    border-color: var(--danger);
+    border-width: 0.1rem;
+    color: white;
+}
+
+.button-danger-outline {
+    background-color: white;
+    border-style: solid;
+    border-color: var(--danger);
+    border-width: 0.1rem;
+    color: var(--danger);
+}
+
 .button:hover {
-    filter: brightness(92%);
+    filter: brightness(90%);
+
 }

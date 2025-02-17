@@ -1,22 +1,33 @@
+:root {
+    --input-font-size: 1rem;
+}
+
 .input {
     padding: 0.5rem;
     margin: 5px 0;
     border-radius: 6px;
     border-width: 1px;
-    border-color: darkgray;
     min-width: 15rem;
-    background-color: var(--backgroud-color);
-    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+    color: var(--dark-primary);
     border-style: solid;
+    border-color: var(--dark-primary);
     border-image: none;
+    transition: 0.3s;
+
+    font-size: var(--input-font-size);
+}
+
+.input::placeholder {
+    color: var(--dark-primary);
 }
 
 .error {
     border-width: 2px;
-    border-color: var(--failure-primary);
+    border-color: var(--danger);
 }
 
 .error::placeholder {
-    color: var(--failure-primary);
+    color: var(--danger);
 }
 

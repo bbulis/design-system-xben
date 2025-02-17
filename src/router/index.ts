@@ -3,6 +3,8 @@ import InputView from '@/views/InputView.vue'
 import MainView from '@/views/MainView.vue'
 import ButtonView from '@/views/ButtonView.vue'
 import TextView from '@/views/TextView.vue'
+import ComponentView from '@/views/ComponentView.vue'
+import ColorView from '@/views/ColorView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +32,16 @@ const router = createRouter({
       path: '/text',
       name: 'text',
       component: TextView,
+    },
+    {
+      path: '/components',
+      name: 'components',
+      component: ComponentView,
+    },
+    {
+      path: '/color',
+      name: 'color',
+      component: ColorView,
     },
   ],
 })

@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--header-backgroud-color);
+    background-color: var(--bg-color-darker);
 
 }
 
@@ -18,7 +18,7 @@
 }
 
 .header-title {
-    color: var(--text-color-primary);
+    color: var(--dark-primary);
 }
 
 .header-links {
@@ -30,7 +30,7 @@
 .header-links a {
     font-size: 1.2rem;
     text-decoration: none;
-    color: var(--text-color-primary);
+    color: var(--dark-primary);
     margin-right: 0.6rem;
     margin-left: 0.6rem;
 }

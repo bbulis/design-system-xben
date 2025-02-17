@@ -12,7 +12,7 @@
 main {
     display: flex;
     justify-content: center;
-    background-color: var(--backgroud-color);
+    background-color: var(--bg-color);
 }
 
 .main-content {
@@ -21,7 +21,7 @@ main {
 }
 
 .h-line {
-    border-bottom: solid 0.1rem var(--text-color-primary);
+    border-bottom: solid 0.1rem var(--dark-primary);
 }
 
 .spacer-1 {

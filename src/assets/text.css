@@ -1,33 +1,33 @@
 h1 {
     font-size: 1.8rem;
-    color: var(--text-color-primary);
+    color: var(--dark-primary);
 }
 
 h2 {
     font-size: 1.6rem;
-    color: var(--text-color-primary);
+    color: var(--dark-primary);
 }
 
 h3 {
     font-size: 1.4rem;
-    color: var(--text-color-primary);
+    color: var(--dark-primary);
 }
 
 h4 {
     font-size: 1.2rem;
-    color: var(--text-color-primary);
+    color: var(--dark-primary);
 }
 
 h5 {
     font-size: 1.0rem;
-    color: var(--text-color-primary);
+    color: var(--dark-primary);
 }
 
 p {
     font-size: 1rem;
-    color: var(--text-color-primary);
+    color: var(--dark-primary);
 }
 
 code {
-    font-family: "Courier New";
+    font-family: "Courier New", monospace;
 }

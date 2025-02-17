@@ -5,6 +5,8 @@
     <div class="header-content">
       <p class="header-title">XBEN Design System</p>
       <div class="header-links">
+        <RouterLink to="/color">Color</RouterLink>
+        <RouterLink to="/components">Components</RouterLink>
         <RouterLink to="/button">Buttons</RouterLink>
         <RouterLink to="/input">Input</RouterLink>
         <RouterLink to="/text">Text</RouterLink>
